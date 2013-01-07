@@ -30,4 +30,6 @@ Optionals:
 
 #### Git structure informations
 
-Create 3 branch, so 3 version of the iOS app (one app by api version)
+Create 3 branch, so 3 version of the iOS app (one app by api version)  
+__OR__  
+Common folder
