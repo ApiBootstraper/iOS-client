@@ -8,6 +8,8 @@ Optionals:
 
 - [AFIncrementalStore](https://github.com/AFNetworking/AFIncrementalStore) + Core data
 
+Use workspace and sub module for dependent libraries ?!
+
 
 ### With Api 1.0
 
@@ -33,3 +35,4 @@ Optionals:
 Create 3 branch, so 3 version of the iOS app (one app by api version)  
 __OR__  
 Common folder
+(See lib repos with example folder)
