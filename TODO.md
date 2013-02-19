@@ -30,7 +30,7 @@ Use workspace and sub module for dependent libraries ?!
 
 #### Git structure informations
 
-Create 3 branch, so 3 version of the iOS app (one app by api version + one for AFIncrementalStore implementation)
+Create 3 branch, so 3 version of the iOS app (one app by api version + one for AFIncrementalStore implementation)  
 __OR__  
 Common folder with 3 examples in 3 directories
 (See lib repos with example folder)
