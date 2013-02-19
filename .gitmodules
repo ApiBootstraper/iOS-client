@@ -1,0 +1,15 @@
+[submodule "submodules/AFNetworking"]
+	path = submodules/AFNetworking
+	url = git://github.com/AFNetworking/AFNetworking.git
+[submodule "submodules/JSONKit"]
+	path = submodules/JSONKit
+	url = git://github.com/johnezang/JSONKit.git
+[submodule "submodules/CJRouter"]
+	path = submodules/CJRouter
+	url = git://github.com/batosai/CJRouter.git
+[submodule "submodules/PullToRefresh"]
+	path = submodules/PullToRefresh
+	url = git://github.com/leah/PullToRefresh.git
+[submodule "submodules/CJInfinityScrollTableViewController"]
+	path = submodules/CJInfinityScrollTableViewController
+	url = git://github.com/batosai/CJInfinityScrollTableViewController.git
