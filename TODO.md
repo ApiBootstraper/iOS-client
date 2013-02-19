@@ -3,6 +3,7 @@
 - [CJRouter](https://github.com/batosai/CJRouter)
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking)
 - PullToRefresh
+- [CJInfinityScrollTableViewController](https://github.com/batosai/CJInfinityScrollTableViewController)
 
 Optionals:
 
@@ -24,15 +25,12 @@ Use workspace and sub module for dependent libraries ?!
 
 - Add geolocation into search
 - Add geolocation into Todo creation
-
-### With Api 1.2
-
 - Add attachments
 
 
 #### Git structure informations
 
-Create 3 branch, so 3 version of the iOS app (one app by api version)  
+Create 3 branch, so 3 version of the iOS app (one app by api version + one for AFIncrementalStore implementation)
 __OR__  
-Common folder
+Common folder with 3 examples in 3 directories
 (See lib repos with example folder)
