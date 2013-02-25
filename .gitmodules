@@ -13,3 +13,6 @@
 [submodule "submodules/CJInfinityScrollTableViewController"]
 	path = submodules/CJInfinityScrollTableViewController
 	url = git://github.com/batosai/CJInfinityScrollTableViewController.git
+[submodule "submodules/MBProgressHUD"]
+	path = submodules/MBProgressHUD
+	url = git://github.com/jdg/MBProgressHUD.git
