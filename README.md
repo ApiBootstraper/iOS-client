@@ -17,11 +17,10 @@ This version use Api version 1.1 and CoreData to save data also in local
 
 ### Libraries used
 
-- [CJRouter](https://github.com/batosai/CJRouter)
-- [AFNetworking](https://github.com/AFNetworking/AFNetworking)
-- PullToRefresh
-- [CJInfinityScrollTableViewController](https://github.com/batosai/CJInfinityScrollTableViewController)
+Libraries used into this project are into the [submodules](./submodules) directory.
 
 ### Routes
 
+It's possible to open the application to a specific location.  
+`apibootstraper://todo?uuid={uuid}` : open the detail view of a todo
 
