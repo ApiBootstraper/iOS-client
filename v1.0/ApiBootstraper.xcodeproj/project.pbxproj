@@ -18,6 +18,7 @@
 		3F48737416DE3B7B0082AF70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F48737116DE3B7B0082AF70 /* Default-568h@2x.png */; };
 		3F48737516DE3B7B0082AF70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F48737216DE3B7B0082AF70 /* Default.png */; };
 		3F48737616DE3B7B0082AF70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F48737316DE3B7B0082AF70 /* Default@2x.png */; };
+		3F48737916DEA53D0082AF70 /* ABModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F48737816DEA53D0082AF70 /* ABModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		3F48737116DE3B7B0082AF70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3F48737216DE3B7B0082AF70 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3F48737316DE3B7B0082AF70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3F48737716DEA53D0082AF70 /* ABModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABModel.h; sourceTree = "<group>"; };
+		3F48737816DEA53D0082AF70 /* ABModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABModel.m; sourceTree = "<group>"; };
+		3F48737A16DEAD730082AF70 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		3F48736D16DE3A650082AF70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F48737716DEA53D0082AF70 /* ABModel.h */,
+				3F48737816DEA53D0082AF70 /* ABModel.m */,
 				3761160D16DE9B9A00C1B4A7 /* User.h */,
 				3761160E16DE9B9A00C1B4A7 /* User.m */,
 				3761161016DE9CB700C1B4A7 /* Todo.h */,
@@ -200,6 +206,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 3F48734016DE38C80082AF70;
 			productRefGroup = 3F48734A16DE38C80082AF70 /* Products */;
@@ -234,6 +241,7 @@
 				3F48735D16DE38C80082AF70 /* AppDelegate.m in Sources */,
 				3761160F16DE9B9A00C1B4A7 /* User.m in Sources */,
 				3761161216DE9CB700C1B4A7 /* Todo.m in Sources */,
+				3F48737916DEA53D0082AF70 /* ABModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +252,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F48735616DE38C80082AF70 /* en */,
+				3F48737A16DEAD730082AF70 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

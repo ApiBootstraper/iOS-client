@@ -10,11 +10,13 @@
 
 @implementation User
 
-@synthesize uuid = _uuid;
-@synthesize username = _username;
-@synthesize email = _email;
+@synthesize
+    uuid        = _uuid,
+    username    = _username,
+    email       = _email,
 
-@synthesize created_at = _created_at;
-@synthesize updated_at = _updated_at;
+    createdAt   = _createdAt,
+    updatedAt   = _updatedAt
+;
 
 @end
