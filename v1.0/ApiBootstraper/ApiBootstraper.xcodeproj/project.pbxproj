@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3761160F16DE9B9A00C1B4A7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3761160E16DE9B9A00C1B4A7 /* User.m */; };
+		3761161216DE9CB700C1B4A7 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3761161116DE9CB700C1B4A7 /* Todo.m */; };
 		3F48734D16DE38C80082AF70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48734C16DE38C80082AF70 /* UIKit.framework */; };
 		3F48734F16DE38C80082AF70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48734E16DE38C80082AF70 /* Foundation.framework */; };
 		3F48735116DE38C80082AF70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48735016DE38C80082AF70 /* CoreGraphics.framework */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3761160D16DE9B9A00C1B4A7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3761160E16DE9B9A00C1B4A7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3761161016DE9CB700C1B4A7 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		3761161116DE9CB700C1B4A7 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		3F48734916DE38C80082AF70 /* ApiBootstraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiBootstraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F48734C16DE38C80082AF70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F48734E16DE38C80082AF70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +133,10 @@
 		3F48736D16DE3A650082AF70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3761160D16DE9B9A00C1B4A7 /* User.h */,
+				3761160E16DE9B9A00C1B4A7 /* User.m */,
+				3761161016DE9CB700C1B4A7 /* Todo.h */,
+				3761161116DE9CB700C1B4A7 /* Todo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +232,8 @@
 			files = (
 				3F48735916DE38C80082AF70 /* main.m in Sources */,
 				3F48735D16DE38C80082AF70 /* AppDelegate.m in Sources */,
+				3761160F16DE9B9A00C1B4A7 /* User.m in Sources */,
+				3761161216DE9CB700C1B4A7 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
