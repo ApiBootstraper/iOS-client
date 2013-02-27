@@ -3,7 +3,7 @@
 //  ApiBootstraper
 //
 //  Created by Jeremy on 27/02/13.
-//  Copyright (c) 2013 apibootstraper. All rights reserved.
+//  Copyright (c) 2013 ApiBootstraper. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

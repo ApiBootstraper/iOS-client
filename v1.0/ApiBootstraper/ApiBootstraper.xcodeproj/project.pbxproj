@@ -182,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = apibootstraper;
+				ORGANIZATIONNAME = ApiBootstraper;
 			};
 			buildConfigurationList = 3F48734416DE38C80082AF70 /* Build configuration list for PBXProject "ApiBootstraper" */;
 			compatibilityVersion = "Xcode 3.2";
