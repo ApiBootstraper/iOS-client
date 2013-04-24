@@ -13,4 +13,6 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define ABDotNetApiBaseUrl @"http://"
+#define ABDotNetApiBaseUrl @"http://nameless-forest-4117.herokuapp.com/"
+
+#define _CJINFINITYSCROLL_PULLREFRESH

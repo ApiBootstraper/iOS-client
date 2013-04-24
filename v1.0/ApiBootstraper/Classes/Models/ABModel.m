@@ -10,6 +10,17 @@
 
 @implementation ABModel
 
+- (id)initWithDictionary:(NSDictionary *)dict
+{
+    self = [super init];
+
+    if(self && [dict isKindOfClass:[NSDictionary class]]) {
+        // setter
+    }
+
+    return self;
+}
+
 - (NSString *)description
 {
     NSMutableString *string = [NSMutableString stringWithString:@""];
@@ -35,6 +46,14 @@
     free(properties);
 
     return string;
+}
+
+#pragma mark - Helper Method
+
+- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict
+{
+    id object = [dict objectForKey:aKey];
+    return [object isEqual:[NSNull null]] ? nil : object;
 }
 
 @end

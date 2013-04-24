@@ -8,8 +8,11 @@
 
 #import "CJInfinityScrollTableViewController.h"
 
+@class MBProgressHUD;
+
 @interface RootViewController : CJInfinityScrollTableViewController {
     UINavigationController *navigationController;
+    MBProgressHUD *indicatorView;
 }
 
 @property (nonatomic, strong) UINavigationController *navigationController;

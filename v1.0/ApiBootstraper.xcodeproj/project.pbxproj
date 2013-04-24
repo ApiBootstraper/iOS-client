@@ -26,6 +26,7 @@
 		3F3A2B35171F561700605197 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A2B30171F55C900605197 /* MBProgressHUD.m */; };
 		3F3A2B37171F566E00605197 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A2B36171F566E00605197 /* QuartzCore.framework */; };
 		3F3A2B3A171F56C500605197 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A2B39171F56C500605197 /* RootViewController.m */; };
+		3F3A2B3C171F5AA500605197 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A2B3B171F5AA500605197 /* Settings.bundle */; };
 		3F48734D16DE38C80082AF70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48734C16DE38C80082AF70 /* UIKit.framework */; };
 		3F48734F16DE38C80082AF70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48734E16DE38C80082AF70 /* Foundation.framework */; };
 		3F48735116DE38C80082AF70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F48735016DE38C80082AF70 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 		3F48737516DE3B7B0082AF70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F48737216DE3B7B0082AF70 /* Default.png */; };
 		3F48737616DE3B7B0082AF70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F48737316DE3B7B0082AF70 /* Default@2x.png */; };
 		3F48737916DEA53D0082AF70 /* ABModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F48737816DEA53D0082AF70 /* ABModel.m */; };
+		3FA1450F17289D0300537C49 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1450E17289D0300537C49 /* arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		3761160E16DE9B9A00C1B4A7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3761161016DE9CB700C1B4A7 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		3761161116DE9CB700C1B4A7 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		3F18F69817287ECA00D6B2C6 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		3F3A2B03171F549800605197 /* ABHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABHTTPClient.h; path = Helpers/ABHTTPClient.h; sourceTree = "<group>"; };
 		3F3A2B04171F549800605197 /* ABHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABHTTPClient.m; path = Helpers/ABHTTPClient.m; sourceTree = "<group>"; };
 		3F3A2B07171F558E00605197 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		3F3A2B36171F566E00605197 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3F3A2B38171F56C500605197 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3F3A2B39171F56C500605197 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3F3A2B3B171F5AA500605197 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3F48734916DE38C80082AF70 /* ApiBootstraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiBootstraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F48734C16DE38C80082AF70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F48734E16DE38C80082AF70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +97,7 @@
 		3F48737716DEA53D0082AF70 /* ABModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABModel.h; sourceTree = "<group>"; };
 		3F48737816DEA53D0082AF70 /* ABModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABModel.m; sourceTree = "<group>"; };
 		3F48737A16DEAD730082AF70 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FA1450E17289D0300537C49 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +235,7 @@
 		3F48735316DE38C80082AF70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F3A2B3B171F5AA500605197 /* Settings.bundle */,
 				3F48735416DE38C80082AF70 /* ApiBootstraper-Info.plist */,
 				3F48735516DE38C80082AF70 /* InfoPlist.strings */,
 				3F48735816DE38C80082AF70 /* main.m */,
@@ -269,6 +275,7 @@
 		3F48736D16DE3A650082AF70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F18F69817287ECA00D6B2C6 /* Models.h */,
 				3F48737716DEA53D0082AF70 /* ABModel.h */,
 				3F48737816DEA53D0082AF70 /* ABModel.m */,
 				3761160D16DE9B9A00C1B4A7 /* User.h */,
@@ -289,6 +296,7 @@
 		3F48736F16DE3A650082AF70 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				3FA1450E17289D0300537C49 /* arrow.png */,
 				3F48737116DE3B7B0082AF70 /* Default-568h@2x.png */,
 				3F48737216DE3B7B0082AF70 /* Default.png */,
 				3F48737316DE3B7B0082AF70 /* Default@2x.png */,
@@ -364,6 +372,8 @@
 				3F48737416DE3B7B0082AF70 /* Default-568h@2x.png in Resources */,
 				3F48737516DE3B7B0082AF70 /* Default.png in Resources */,
 				3F48737616DE3B7B0082AF70 /* Default@2x.png in Resources */,
+				3F3A2B3C171F5AA500605197 /* Settings.bundle in Resources */,
+				3FA1450F17289D0300537C49 /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
+#import "AFHTTPRequestOperation.h"
+#import "ABHTTPClient.h"
+
 @interface ABModel : NSObject
+
+- (id)initWithDictionary:(NSDictionary *)dict;
+- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict;
 
 @end

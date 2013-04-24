@@ -10,4 +10,6 @@
 
 @interface ABHTTPClient : AFHTTPClient
 
++ (ABHTTPClient *)sharedClient;
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "MBProgressHUD.h"
+#import "Todo.h"
 
 @interface RootViewController ()
 
@@ -23,6 +25,8 @@
         self.title = NSLocalizedString(@"Todo List", nil);
         UIBarButtonItem *addTodoButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addTodoButtonPress:)];
         self.navigationItem.rightBarButtonItem = addTodoButton;
+
+        indicatorView = [[MBProgressHUD alloc] initWithView:self.view];
     }
     return self;
 }
@@ -31,11 +35,7 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self reload:nil];
 }
 
 - (UINavigationController *)navigationController {
@@ -51,21 +51,27 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [rows count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
+    Todo *todo = rows[indexPath.row];
+
+    cell.textLabel.text = todo.name;
+
     return cell;
 }
 
@@ -120,6 +126,36 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+#pragma mark - CJInfinityScrollTableViewController delegate
+
+- (void)reload:(id)sender {
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+
+    if (offset)
+        [dictionary setValue:[NSNumber numberWithInt:offset] forKey:@"offset"];
+
+    if (limit)
+        [dictionary setValue:[NSNumber numberWithInt:limit] forKey:@"limit"];
+
+
+    [indicatorView show:YES];
+    [self beginLoading];
+    [Todo todosWithParameters:dictionary callback:^(id todosOrOperation, id totalCountOrError) {
+        if ([[totalCountOrError class] isSubclassOfClass:[NSError class]]) {
+#warning TODO show indicatorView error
+#warning TODO pb pull refrech
+        }
+        else {
+            [rows addObjectsFromArray:[todosOrOperation copy]];
+            totalRowsCount = [totalCountOrError integerValue];
+
+            [indicatorView hide:YES];
+        }
+        [self endLoading];
+    }];
+}
+
 
 #pragma press button
 
