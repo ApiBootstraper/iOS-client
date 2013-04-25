@@ -144,9 +144,11 @@
     [Todo todosWithParameters:dictionary callback:^(id todosOrOperation, id totalCountOrError) {
         if ([[totalCountOrError class] isSubclassOfClass:[NSError class]]) {
 #warning TODO show indicatorView error
-#warning TODO pb pull refrech
         }
         else {
+            if ([sender isEqualToString:@"refresh"]) {
+                [rows removeAllObjects];
+            }
             [rows addObjectsFromArray:[todosOrOperation copy]];
             totalRowsCount = [totalCountOrError integerValue];
 
